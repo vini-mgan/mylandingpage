@@ -1,0 +1,107 @@
+body, html, #section1, #section2 {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(12, 12, 12, 1);
+    box-sizing: border-box;
+}
+
+/* --- FIRST SECTION --- */
+
+#section1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/1351629.png");
+    background-size: cover;
+    height: 95%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: white;
+    position: relative;
+}
+
+.topnav {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo{
+    background-color: transparent;
+    margin-right: 5%;
+}
+
+.topnav .item {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(43, 74, 114, 1);
+    font-family: Montserrat, sans-serif;
+    background-color: rgba(12, 12, 12, 80%);
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+
+.item:hover {
+    background-color: rgba(41, 65, 114, 1);
+    color: white;
+    box-shadow: 1px 1px 5px 2.5px rgba(41, 65, 114, 1);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.header p{
+    border: 1px solid white;
+    border-radius: 2px;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 16px;
+    margin: auto 16px;
+    flex-grow: 1;
+}
+
+.chevron-down {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* --- SECOND SECTION --- */
+
+#section2 {
+
+}
+
+/* Color Theme Swatches in Hex */
+.Architecture-1-hex { color: #294273; }
+.Architecture-2-hex { color: #2C4A73; }
+.Architecture-3-hex { color: #D97A07; }
+.Architecture-4-hex { color: #732002; }
+.Architecture-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Architecture-1-rgba { color: rgba(41, 65, 114, 1); }
+.Architecture-2-rgba { color: rgba(43, 74, 114, 1); }
+.Architecture-3-rgba { color: rgba(216, 122, 6, 1); }
+.Architecture-4-rgba { color: rgba(114, 32, 2, 1); }
+.Architecture-5-rgba { color: rgba(12, 12, 12, 1); }
+
