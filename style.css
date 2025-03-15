@@ -4,6 +4,7 @@ body, html, #section1, #section2 {
     margin: 0;
     background-color: rgba(12, 12, 12, 1);
     box-sizing: border-box;
+    font-family: "courier new", courier, monospace;
 }
 
 a {
@@ -16,12 +17,13 @@ a {
 #section1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/1351629.png");
     background-size: cover;
-    height: 95%;
+    height: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     color: white;
     position: relative;
+    overflow: hidden;
 }
 
 #section1::selection {
@@ -32,7 +34,6 @@ a {
 .topnav {
     padding: 16px;
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     gap: 24px;
@@ -40,49 +41,54 @@ a {
 }
 
 .logo{
+    margin: 0 5%;
     background-color: transparent;
-    margin-right: 5%;
+}
+
+.logo svg{
+    width: 120px; /* 84 */
+    height: 80px; /* 40 */
 }
 
 .topnav .item {
     text-decoration: none;
     font-size: 24px;
     color: rgba(216, 122, 6, 1);
-    font-family: Montserrat, sans-serif;
-    background-color: rgba(12, 12, 12, 80%);
+    background-color: rgba(12, 12, 12, 60%);
     padding: 8px;
     border-radius: 8px;
 }
 
-
 .item:hover {
-    color: whitesmoke;
+    color: rgba(216, 122, 6, 1);
 }
 
 .header {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     padding: 16px;
-    color: white;
+    color: ghostwhite;
 }
 
 .header-phrase {
-    font-family: "courier new", courier, monospace;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 1.6vw;
+    max-width: 50%;
+    transition: font-size 0.3s ease;
     text-align: center;
     padding: 16px;
-    margin: auto 16px;
+    margin: 16px;
     flex: 1 auto;
 }
 
 .header-phrase h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     white-space: nowrap; /* Keeps the content on a single line */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    border-right: .15em solid rgba(216, 122, 6, 1); /* The typwriter cursor */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation:
@@ -102,23 +108,57 @@ a {
 }
 
 .latest-projects {
-    border: 4px solid whitesmoke;
+    border: 5px solid ghostwhite;
+    border-radius: 2.5px;
+    color: ghostwhite;
     font-size: 20px;
-    font-family: "courier new", courier, monospace;
     text-decoration: none;
     padding: 24px;
     margin: auto 16px;
     flex: 1 auto;
+    max-width: 50%;
+    transition: font-size 0.3s ease;
 }
 
-.latest-projects a:hover {
+.latest-projects h1 {
+    position: sticky;
+    top: 0;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #ddd;
+}
+
+.lista-projetos {
+    overflow: auto;
+    height: 300px;
+}
+
+.lista-projetos::-webkit-scrollbar {
+    width: 12px;
+}
+
+.lista-projetos::-webkit-scrollbar-track {
+    background-color: transparent;
+    border: 1.5px solid #7e7e7e;
+    border-radius: 8px;
+}
+
+.lista-projetos::-webkit-scrollbar-thumb {
+    background-color: ghostwhite;
+    border: 2px solid #616161;
+    border-radius: 8px;
+}
+
+
+.lista-projetos a:hover {
     text-decoration: underline;
+    color: rgba(216, 122, 6, 1);
 }
 
 .chevron-down {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 16px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -127,7 +167,12 @@ a {
 /* --- SECOND SECTION --- */
 
 #section2 {
+    color:ghostwhite;
+}
 
+#section2::selection {
+    color: rgba(12, 12, 12, 1);
+    background: rgba(216, 122, 6, 1);
 }
 
 /* Color Theme Swatches in Hex */
