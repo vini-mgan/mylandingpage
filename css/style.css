@@ -15,7 +15,7 @@ a {
 /* --- FIRST SECTION --- */
 
 #section1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/1351629.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/1351629.png");
     background-size: cover;
     height: auto;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ a {
 }
 
 .item:hover {
-    color: rgba(216, 122, 6, 1);
+    color: ghostwhite;
 }
 
 .header {
@@ -130,6 +130,7 @@ a {
 .lista-projetos {
     overflow: auto;
     height: 300px;
+    font-size: 1.3em;
 }
 
 .lista-projetos::-webkit-scrollbar {
