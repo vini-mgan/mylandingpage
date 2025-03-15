@@ -7,6 +7,10 @@ body, html, #section1, #section2 {
     font-family: "courier new", courier, monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -22,7 +26,6 @@ a {
     background-attachment: fixed;
     background-position: center center;
     color: white;
-    position: relative;
     overflow: hidden;
 }
 
@@ -37,7 +40,7 @@ a {
     justify-content: flex-start;
     align-items: center;
     gap: 24px;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .logo{
@@ -160,7 +163,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 16px;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
