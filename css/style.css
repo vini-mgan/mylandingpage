@@ -40,7 +40,7 @@ a {
     justify-content: flex-start;
     align-items: center;
     gap: 24px;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .logo{
@@ -176,6 +176,12 @@ a {
 #section2::selection {
     color: rgba(12, 12, 12, 1);
     background: rgba(216, 122, 6, 1);
+}
+
+.test {
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
 }
 
 /* Color Theme Swatches in Hex */
