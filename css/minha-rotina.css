@@ -45,6 +45,27 @@
     justify-content: center;
 }
 
+.musica{
+    margin: 0 auto;
+}
+
+.rotina {
+    text-align: center;
+    font-size: 1.8rem;
+    border: 1px solid ghostwhite;
+    border-radius: 8px;
+    max-width: 75%;
+    margin: 16px auto;
+    padding: 8px;
+}
+
+.img-quote {
+    display: flex;
+    max-width: 60%;
+    margin: 16px auto;
+    padding: 8px;
+}
+
 .mypicture {
     flex: 1 auto;
     max-width: 33%;
@@ -56,9 +77,9 @@
 
 blockquote {
     flex: 3 auto;
-    max-width: 67%;
-    background: #f9f9f9;
-    border-left: 10px solid #ccc;
+    color: ghostwhite;
+    font-size: 1.5rem;
+    border-left: 10px solid rgba(216, 122, 6, 1);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
