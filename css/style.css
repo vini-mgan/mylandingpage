@@ -1,14 +1,24 @@
+
+* {
+    box-sizing: border-box;
+}
+
 body, html, #section1, #section2 {
     height: 100%;
     width: 100%;
     margin: 0;
+    color: ghostwhite;
     background-color: rgba(12, 12, 12, 1);
-    box-sizing: border-box;
     font-family: "courier new", courier, monospace;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body::selection {
+    color: rgba(12, 12, 12, 1);
+    background: rgba(216, 122, 6, 1);
 }
 
 a {
@@ -69,7 +79,6 @@ a {
 .header {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     padding: 16px;
@@ -107,7 +116,7 @@ a {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: rgba(216, 122, 6, 1);; }
+    50% { border-color: rgba(216, 122, 6, 1); }
 }
 
 .latest-projects {
@@ -171,11 +180,6 @@ a {
 
 #section2 {
     color:ghostwhite;
-}
-
-#section2::selection {
-    color: rgba(12, 12, 12, 1);
-    background: rgba(216, 122, 6, 1);
 }
 
 .test {
