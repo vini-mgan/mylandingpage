@@ -45,8 +45,12 @@
     justify-content: center;
 }
 
-.musica{
-    margin: 0 auto;
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin: 0;
 }
 
 .rotina {
