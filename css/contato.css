@@ -1,0 +1,15 @@
+
+.contact-card{
+    border: 2px solid ghostwhite;
+    border-radius: 8px;
+    width: fit-content;
+    font-size: 1.5rem;
+    margin: 16px auto;
+    padding: 16px;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+    color: rgba(216, 122, 6, 1);
+}
+

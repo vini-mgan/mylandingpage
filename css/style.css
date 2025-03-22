@@ -182,10 +182,12 @@ a {
     color:ghostwhite;
 }
 
-.test {
+.text {
     text-align: center;
-    padding: 50px;
-    margin-top: 50px;
+    padding: 100px;
+    margin: 50px 10%;
+    border: 1px solid ghostwhite;
+    border-radius: 8px;
 }
 
 /* Color Theme Swatches in Hex */

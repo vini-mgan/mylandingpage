@@ -1,17 +1,4 @@
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.div1{
-    height: auto;
-}
-
-.topnav {
-    position: sticky;
-}
-
 .titulo {
     display: flex;
     align-items: center;
@@ -43,37 +30,40 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .player {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
-    margin: 0;
+    margin: 16px;
 }
 
 .rotina {
-    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
     font-size: 1.8rem;
     border: 1px solid ghostwhite;
     border-radius: 8px;
     max-width: 75%;
-    margin: 16px auto;
-    padding: 8px;
+    margin: 5% auto;
+    padding: 48px;
 }
 
 .img-quote {
     display: flex;
-    max-width: 60%;
-    margin: 16px auto;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 10%;
     padding: 8px;
 }
 
 .mypicture {
-    flex: 1 auto;
-    max-width: 33%;
+    flex: 1 1 auto;
     margin: 20px;
+    height: auto;
+    max-width: 30%;
     box-shadow:
             -50px -50px 0 -40px rgba(216, 122, 6, 1),
             50px 50px 0 -40px rgba(216, 122, 6, 1);
@@ -83,9 +73,9 @@ blockquote {
     flex: 3 auto;
     color: ghostwhite;
     font-size: 1.5rem;
-    border-left: 10px solid rgba(216, 122, 6, 1);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
+    border-left: 10px solid rgba(216, 122, 6, 1);
     quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
@@ -96,7 +86,7 @@ blockquote:before {
     margin-right: 0.25em;
     vertical-align: -0.4em;
 }
-blockquote p {
+blockquote .phrase {
     display: inline;
 }
 
