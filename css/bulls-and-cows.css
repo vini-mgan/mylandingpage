@@ -122,6 +122,17 @@ button {
     color: white;
 }
 
+#show-combination {
+    background-color: var(--info);
+    color: white;
+}
+
+.icon-button img {
+    filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
+}
+
 button:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

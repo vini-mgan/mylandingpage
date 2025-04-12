@@ -45,33 +45,33 @@ class BullsAndCowsGame {
         const totalAnimals = bulls + cows;
         if (totalAnimals === 0) return;
 
-        // Calcula o espaço disponível
+        // espaço disponível
         const containerWidth = this.animalsArea.offsetWidth;
         const spacing = containerWidth / (totalAnimals + 1);
 
-        // Função para criar um animal
+
         const createAnimal = (type, index) => {
             const animal = document.createElement('img');
             animal.src = type === 'bull' ? '../images/bull.png' : '../images/cow.png';
             animal.className = 'animal';
 
-            // Adiciona um pequeno atraso aleatório para cada animal
+            //atraso aleatório para cada animal
             const delay = Math.random() * 0.5;
             animal.style.animation = `bounce 1s infinite ease-in-out ${delay}s`;
 
-            // Adiciona a classe visible após um pequeno delay para criar efeito de fade in
+            // efeito de fade in
             setTimeout(() => animal.classList.add('visible'), 50);
 
             return animal;
         };
 
-        // Adiciona bulls
+        // bulls
         for (let i = 0; i < bulls; i++) {
             const bull = createAnimal('bull', i);
             this.animalsArea.appendChild(bull);
         }
 
-        // Adiciona cows
+        // cows
         for (let i = 0; i < cows; i++) {
             const cow = createAnimal('cow', bulls + i);
             this.animalsArea.appendChild(cow);
@@ -79,10 +79,9 @@ class BullsAndCowsGame {
     }
 
     celebrateWin() {
-        // Duração total da animação: 3 segundos
+        // animação: 3s
         const end = Date.now() + 3000;
 
-        // Cores do confetti em tons de fazenda
         const colors = ['#8B4513', '#F4D03F', '#795548', '#2ecc71', '#87CEEB', '#D35400'];
 
         const frame = () => {
@@ -106,7 +105,7 @@ class BullsAndCowsGame {
             }
         };
 
-        // Inicia a animacao
+        // Inicia animacao
         frame();
 
         //confetes no centro
@@ -122,6 +121,7 @@ class BullsAndCowsGame {
         const guessInput = document.getElementById('guess');
         const submitButton = document.getElementById('submit-guess');
         const newGameButton = document.getElementById('new-game');
+        const showCombinationButton = document.getElementById('show-combination');
         const messageElement = document.getElementById('message');
 
         submitButton.addEventListener('click', () => {
@@ -160,6 +160,10 @@ class BullsAndCowsGame {
             messageElement.style.backgroundColor = 'transparent';
         });
 
+        showCombinationButton.addEventListener('click', () => {
+            alert(`A combinação secreta é: ${this.secretNumber}`);
+        });
+
         guessInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 submitButton.click();
@@ -175,7 +179,7 @@ class BullsAndCowsGame {
             const guessItem = document.createElement('div');
             guessItem.className = 'guess-item';
 
-            // Adiciona número da tentativa
+            // número da tentativa
             const attemptNumber = document.createElement('span');
             attemptNumber.className = 'attempt-number';
             attemptNumber.textContent = `#${this.guesses.length - index}`;
@@ -208,7 +212,7 @@ class BullsAndCowsGame {
             guessItem.appendChild(bullsCows);
             guessesList.appendChild(guessItem);
 
-            // Adiciona animação de entrada para nova tentativa
+            // entrada da nova tentativa
             if (index === 0) {
                 guessItem.style.animation = 'slideIn 0.3s ease-out';
             }
