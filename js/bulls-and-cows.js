@@ -39,7 +39,7 @@ class BullsAndCowsGame {
     }
 
     updateAnimals(bulls, cows) {
-        // Limpa a área de animais
+        // Limpa a área dos animais
         this.animalsArea.innerHTML = '';
 
         const totalAnimals = bulls + cows;
@@ -106,10 +106,10 @@ class BullsAndCowsGame {
             }
         };
 
-        // Inicia a animação
+        // Inicia a animacao
         frame();
 
-        // Adiciona uma explosão no centro
+        //confetes no centro
         confetti({
             particleCount: 150,
             spread: 100,
@@ -187,7 +187,7 @@ class BullsAndCowsGame {
             const bullsCows = document.createElement('div');
             bullsCows.className = 'bulls-cows';
 
-            // Adiciona ícones de bull
+            //ícones de bull
             for (let i = 0; i < guessData.result.bulls; i++) {
                 const bullIcon = document.createElement('img');
                 bullIcon.src = '../images/bull.png';
@@ -195,7 +195,7 @@ class BullsAndCowsGame {
                 bullsCows.appendChild(bullIcon);
             }
 
-            // Adiciona ícones de cow
+            //ícones de cow
             for (let i = 0; i < guessData.result.cows; i++) {
                 const cowIcon = document.createElement('img');
                 cowIcon.src = '../images/cow.png';
@@ -216,7 +216,7 @@ class BullsAndCowsGame {
     }
 }
 
-// Inicia o jogo quando a página carregar
+// Inicia jogo
 document.addEventListener('DOMContentLoaded', () => {
     new BullsAndCowsGame();
 });
