@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Bulls and Cows</title>
+    <link rel="stylesheet" href="../css/bulls-and-cows.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Bulls and Cows</h1>
+    <div class="game-container">
+        <div class="input-section">
+            <input type="text" id="guess" maxlength="4" placeholder="Sua aposta">
+            <button id="submit-guess">Tentar</button>
+            <button id="new-game">Novo Jogo</button>
+        </div>
+        <div class="message" id="message"></div>
+        <div class="rules">
+            <h2>Regras do Jogo</h2>
+            <p>🎯 Adivinhe a senha de 4 dígitos. Todos os dígitos devem ser diferentes.</p>
+            <p>🐂 Bull: Quando um dígito está na posição correta</p>
+            <p>🐄 Cow: Quando um dígito existe mas está na posição errada</p>
+        </div>
+        <div class="history" id="history">
+            <h2>Tentativas Anteriores</h2>
+            <div id="guesses-list"></div>
+        </div>
+    </div>
+</div>
+<div class="animals-area" id="animals-area"></div>
+<script src="../js/bulls-and-cows.js"></script>
+</body>
+</html>
